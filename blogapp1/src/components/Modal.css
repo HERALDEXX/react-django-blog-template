@@ -1,0 +1,111 @@
+/* Modal container */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: calc(100% - 1rem); */
+    height: 100vh;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    max-height: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover .close-icon {
+    color: #000;
+}
+
+.close-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #666;
+}
+
+/* Modal body */
+.modal-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Modal icon */
+.modal-icon {
+    margin: 0 auto 1rem;
+    width: 3rem;
+    height: 3rem;
+    color: #666;
+}
+
+/* Modal title */
+.modal-title {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #666;
+}
+
+/* Confirm button */
+.confirm-button {
+    background-color: #e3342f;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.confirm-button:hover {
+    background-color: #cc1f1a;
+}
+
+/* Cancel button */
+.cancel-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.cancel-button:hover {
+    background-color: #f0f0f0;
+    color: #0073e6;
+}
